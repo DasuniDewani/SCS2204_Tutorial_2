@@ -1,0 +1,852 @@
+2022.07.10 18:56:14 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Asus\Desktop\scala_Assignment\.metals\lsp.trace.json or C:\Users\Asus\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.07.10 18:56:16 INFO  logging to file C:\Users\Asus\Desktop\scala_Assignment\.metals\metals.log
+2022.07.10 18:56:16 INFO  Started: Metals version 0.11.7 in workspace 'C:\Users\Asus\Desktop\scala_Assignment' for client Visual Studio Code 1.69.0.
+2022.07.10 18:56:17 INFO  time: initialize in 1.69s
+2022.07.10 18:56:18 WARN  Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.07.10 18:56:19 WARN  Build server is not auto-connectable.
+2022.07.10 18:56:19 WARN  no build tool detected in workspace 'C:\Users\Asus\Desktop\scala_Assignment'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.07.10 18:56:22 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:56:27 INFO  no build target found for C:\Users\Asus\Desktop\scala_Assignment\Que123.scala. Using presentation compiler with project's scala-library version: 3.1.3
+2022.07.10 18:56:30 INFO  time: code lens generation in 7.75s
+2022.07.10 18:56:30 INFO  time: code lens generation in 7.74s
+2022.07.10 18:57:18 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:22 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+Jul 10, 2022 6:57:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+Jul 10, 2022 6:57:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:1: error: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:1: error: expected identifier; obtained intlit
+object 123{
+       ^
+object 123{
+       ^
+java.util.concurrent.CompletionException: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:1: error: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:1: error: expected identifier; obtained intlit
+object 123{
+       ^
+object 123{
+       ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:1: error: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:1: error: expected identifier; obtained intlit
+object 123{
+       ^
+object 123{
+       ^
+	at scala.meta.internal.mtags.ScalaToplevelMtags.fail(ScalaToplevelMtags.scala:358)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.newIdentifier(ScalaToplevelMtags.scala:343)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.emitMember(ScalaToplevelMtags.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:118)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:269)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:202)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:202)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:197)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:33)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:29)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1480)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.07.10 18:57:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:57:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:30 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:36 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:52 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:54 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:58:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:25 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:42 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:48 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:54 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:56 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 18:59:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:18 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:23 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:27 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:29 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:48 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:57 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:00:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:02 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:18 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:48 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:52 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:54 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:01:56 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:03:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:03:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:03:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:03:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:03:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:03:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:06 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:10 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:04:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:05:25 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:05:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:05:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:05:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:05:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:06:29 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:07:27 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:07:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:07:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:07:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:07:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:06 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+Jul 10, 2022 7:08:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:21: error: unclosed comment
+        /* compare the java and scala programming languages
+        ^
+java.util.concurrent.CompletionException: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:21: error: unclosed comment
+        /* compare the java and scala programming languages
+        ^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: file:///C:/Users/Asus/Desktop/scala_Assignment/Que123.scala:21: error: unclosed comment
+        /* compare the java and scala programming languages
+        ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:52)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipBlockComment(LegacyScanner.scala:58)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:72)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipComment(LegacyScanner.scala:80)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:345)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.acceptBalancedDelimeters(ScalaToplevelMtags.scala:274)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:172)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:269)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:202)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:202)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:197)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:33)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:29)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1480)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.07.10 19:08:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:22 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:24 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:08:27 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:10:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:10:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:10:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:02 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:11:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:24 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:42 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:12:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:02 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:10 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:13:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:14:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:14:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:14:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:14:18 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:14:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:15:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:16:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+Jul 10, 2022 7:16:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 56 is not a valid line number, allowed [0..48]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 13 more
+
+2022.07.10 19:16:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+Jul 10, 2022 7:16:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 56 is not a valid line number, allowed [0..48]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 13 more
+
+2022.07.10 19:16:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:17:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que123.scala
+2022.07.10 19:18:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:19:02 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 19:21:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:21:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:21:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:21:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:21:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:21:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:23:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:23:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:23:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:23:52 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:23:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+Jul 10, 2022 7:23:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: file:///C:/Users/Asus/Desktop/scala_Assignment/Que4a.scala:6: error: unclosed comment
+/*To read a number from console input, we use the method scala.io.StdIn.readInt(), scala.io.StdIn.readFloat().
+^
+java.util.concurrent.CompletionException: file:///C:/Users/Asus/Desktop/scala_Assignment/Que4a.scala:6: error: unclosed comment
+/*To read a number from console input, we use the method scala.io.StdIn.readInt(), scala.io.StdIn.readFloat().
+^
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: file:///C:/Users/Asus/Desktop/scala_Assignment/Que4a.scala:6: error: unclosed comment
+/*To read a number from console input, we use the method scala.io.StdIn.readInt(), scala.io.StdIn.readFloat().
+^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:27)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:29)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:52)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipBlockComment(LegacyScanner.scala:58)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:72)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipComment(LegacyScanner.scala:80)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:345)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:142)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:269)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:202)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:202)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:197)
+	at scala.meta.internal.metals.DocumentHighlightProvider.$anonfun$documentHighlight$1(DocumentHighlightProvider.scala:33)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.DocumentHighlightProvider.documentHighlight(DocumentHighlightProvider.scala:29)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentHighlights$1(MetalsLanguageServer.scala:1480)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.07.10 19:24:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:24:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:24:10 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:24:14 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:24:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:24:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:24:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:27:06 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:27:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+Jul 10, 2022 7:27:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 16 is not a valid line number, allowed [0..12]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 13 more
+
+Jul 10, 2022 7:27:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 13 is not a valid line number, allowed [0..12]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 13 more
+
+2022.07.10 19:27:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:27:22 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:27:30 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:28:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:28:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:28:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:23 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:29:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:30:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:30:23 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:30:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:30:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:30:54 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:24 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:31:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:34:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:35:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:35:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:35:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:35:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:35:54 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:36:02 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:36:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:36:24 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:36:27 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:36:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+Jul 10, 2022 7:36:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 22 is not a valid line number, allowed [0..21]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:66)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:65)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1652)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1651)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 13 more
+
+2022.07.10 19:36:48 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:36:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:02 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:06 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:15 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:36 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:37:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:22 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:27 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:42 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:52 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:38:56 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:39:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:39:29 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:39:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:39:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:39:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:40:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:40:23 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:40:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:40:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:40:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:18 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:24 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:29 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:52 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:57 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:41:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:06 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:14 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:25 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:42:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:43:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:43:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:44:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:44:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:44:10 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:44:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:48:14 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:48:15 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:48:17 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:48:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:22 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:41 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:48 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:49:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:10 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:14 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:17 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:25 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:28 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:30 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:50:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:35 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:38 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:46 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:51:57 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:12 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:17 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:21 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:29 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:42 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:52:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:00 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:57 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:53:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:54:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:54:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:54:21 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:56:45 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:56:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:56:56 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:57:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:57:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:57:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:57:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:57:25 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:58:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:58:15 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:58:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:58:21 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:59:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 19:59:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 20:00:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 20:02:19 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:04:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:04:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:04:14 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:04:20 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+2022.07.10 20:04:32 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:04:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:04:37 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:08:07 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:08:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:16:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:17:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:17:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:17:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:18:25 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:18:26 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:18:31 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:18:33 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:18:34 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:39 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:42 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:44 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:49 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:50 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:42:57 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:05 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:40 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:47 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:51 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:53 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:43:58 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:44:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:44:11 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:45:06 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:45:36 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:45:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:45:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:45:59 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:46:08 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:46:13 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+Jul 10, 2022 8:46:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: Toplevel definition main is defined in
+  C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+and also in
+  C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+One of these files should be removed from the classpath.
+dotty.tools.dotc.core.TypeError: Toplevel definition main is defined in
+  C:\Users\Asus\Desktop\scala_Assignment\Que4a.scala
+and also in
+  C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2431)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$5(SymDenotations.scala:2395)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2451)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2010)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2061)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:683)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:808)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:700)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:876)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:666)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:650)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1017)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:922)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:922)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1017)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:133)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:188)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:83)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.completions.CompletionsProvider.completions(CompletionsProvider.scala:56)
+
+2022.07.10 20:46:15 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:46:55 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:47:01 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:47:03 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:47:09 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:47:16 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:47:24 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:47:43 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 20:48:04 WARN  no build target for: C:\Users\Asus\Desktop\scala_Assignment\Que4b.scala
+2022.07.10 21:08:43 INFO  shutting down Metals
